@@ -8,7 +8,7 @@ test('Verify Client Work page navigation from Services', async ({ page }) => {
     await acceptAllButton.click();
   }
 
-  // The live page displayed the responsive hamburger menu.
+  // Open the responsive navigation menu observed on the live page.
   await page.locator('.hamburger-menu-ui').click();
 
   await page.getByRole('link', { name: 'Services', exact: true }).click();
